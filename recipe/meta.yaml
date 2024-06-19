@@ -9,9 +9,12 @@ source:
   sha256: 2b75309b764c9f2f3fdc1dd31eeea5a74498f7da21ae757b3ffd6fd537ec5345
 
 build:
-  number: 0
+  number: 1
 
 requirements:
+  build:
+    - {{ compiler("rust") }}
+    - {{ stdlib("c") }}
   host:
     - rust
 
