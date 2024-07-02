@@ -15,8 +15,6 @@ requirements:
   build:
     - {{ compiler("rust") }}
     - {{ stdlib("c") }}
-  host:
-    - rust
 
 test:
   commands:
